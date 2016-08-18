@@ -23,13 +23,59 @@
 		</li>
 		<hr />
 		<li>访问普通类的构造方法：<s:property
-				value="new com.struts2.ongl.model.User(13245325)"/></li>
+				value="new com.struts2.ongl.model.User(13245325)" /></li>
 		<hr />
-		
-		
-
+		<li>访问List:<s:property value="users" /></li>
+		<li>访问List中某个元素:<s:property value="users[0]" /></li>
+		<li>访问List中某个属性的集合:<s:property value="users.{age}" /></li>
+		<li>访问List中某个属性的集合中的特定值:<s:property value="users.{age}[1]" />|<s:property
+				value="users[0].age" /></li>
+		<li>访问Set：<s:property value="dogs" /></li>
+		<li>访问Set中某个元素：<s:property value="dogs[2]" /></li>
+		<li>访问Map：<s:property value="dogMap" /></li>
+		<li>访问Map中某个元素：<s:property value="dogMap.dog100" />| <s:property
+				value="dogMap['dog101']" />| <s:property value="dogMap[\"dog102\"]" />
+		</li>
+		<li>访问Map中所有的key：<s:property value="dogMap.keys" /></li>
+		<li>访问Map中所有的value：<s:property value="dogMap.values" /></li>
+		<li>访问Map容器的大小：<s:property value="dogMap.size()" /></li>
+		<hr />
+		<li>投影（过滤）：<s:property value="users.{?#this.age==1}[0]" /></li>
+		<li>投影：<s:property value="users.{^#this.age>1}.{age}" /></li>
+		<li>投影：<s:property value="users.{$#this.age>1}.{age}" /></li>
+		<li>投影：<s:property value="users.{$#this.age==1}.{age} == null" /></li>
+		<hr />
+		<li>[]:<s:property value="[0].username" /></li>
 	</ol>
-
 	<s:debug></s:debug>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
