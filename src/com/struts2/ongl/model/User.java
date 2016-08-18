@@ -19,13 +19,14 @@ package com.struts2.ongl.model;
  * @contents 内容摘要：
  */
 public class User {
-	private int age;
+	private int age = 8;
 
 	public User() {
 	}
 
 	public User(int age) {
 		super();
+		System.out.println("age:" + age);
 		this.age = age;
 	}
 
@@ -34,11 +35,13 @@ public class User {
 	}
 
 	public void setAge(int age) {
+		
 		this.age = age;
 	}
 
 	@Override
 	public String toString() {
+		System.out.println("1age:" + age);
 		return "age:" + age;
 	}
 
