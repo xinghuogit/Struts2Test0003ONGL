@@ -22,8 +22,10 @@
 		<li>访问Math类的静态构造方法：<s:property value="@@max(2,3)" /> 两个@ 就是Math类
 		</li>
 		<hr />
+		<li>访问普通类的构造方法：<s:property value="new com.struts2.ongl.User(8)" /></li>
+		<hr />
 		<li>访问普通类的构造方法：<s:property
-				value="new com.struts2.ongl.model.User(13245325)" /></li>
+				value="new com.struts2.ongl.model.User(666)" /></li>
 		<hr />
 		<li>访问List:<s:property value="users" /></li>
 		<li>访问List中某个元素:<s:property value="users[0]" /></li>

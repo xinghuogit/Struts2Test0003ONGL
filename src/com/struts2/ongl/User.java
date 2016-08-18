@@ -5,14 +5,14 @@
  * 内容摘要：User.java
  * 当前版本：TODO
  * 作        者：李加蒙
- * 完成日期：2016年8月18日 下午3:12:05
+ * 完成日期：2016年8月18日 下午5:48:04
  * 修改记录：
- * 修改日期：2016年8月18日 下午3:12:05
+ * 修改日期：2016年8月18日 下午5:48:04
  * 版   本 号：
  * 修   改 人：
  * 修改内容：
  ************************************************************************************************/
-package com.struts2.ongl.model;
+package com.struts2.ongl;
 
 /**
  * @filename 文件名称：User.java
@@ -26,7 +26,6 @@ public class User {
 
 	public User(int age) {
 		super();
-		System.out.println("age:" + age);
 		this.age = age;
 	}
 
@@ -35,7 +34,6 @@ public class User {
 	}
 
 	public void setAge(int age) {
-
 		this.age = age;
 	}
 
@@ -43,4 +41,5 @@ public class User {
 	public String toString() {
 		return "user" + age;
 	}
+
 }
